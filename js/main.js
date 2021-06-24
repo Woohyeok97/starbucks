@@ -1,20 +1,3 @@
-// 검색창 애니메이션
-const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
-
-searchEl.addEventListener('click', () => {
-  searchInputEl.focus();
-})
-
-searchInputEl.addEventListener('focus', () => {
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '통합검색');
-})
-
-searchInputEl.addEventListener('blur', () => {
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder', '');
-})
 
 // 상단뱃지 숨기기,애니메이션
 const badgeEl = document.querySelector('header .badges');
@@ -163,8 +146,7 @@ spyEls.forEach(spyEl=> {
 })
 
 
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
+
 
 
 
